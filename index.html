@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modad Supplies | شركة موداد للمقاولات - الرياض</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0f172a",
+                        secondary: "#c5a059",
+                        accent: "#1e293b",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700;900&display=swap');
+        body { font-family: 'Tajawal', sans-serif; overflow-x: hidden; }
+        .hero-overlay { 
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1500'); 
+            background-size: cover; 
+            background-position: center;
+            background-attachment: fixed; 
+        }
+        @media (max-width: 768px) {
+            .hero-overlay { background-attachment: scroll; }
+        }
+        .whatsapp-float { position: fixed; bottom: 20px; left: 20px; z-index: 100; transition: 0.3s; }
+        .whatsapp-float:hover { transform: scale(1.1); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-all duration-500">
+
+    <a href="https://wa.me/966550592581" class="whatsapp-float bg-green-500 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-2xl" target="_blank">
+        <i class="fab fa-whatsapp text-2xl md:text-3xl"></i>
+    </a>
+
+    <nav class="fixed w-full z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b dark:border-slate-800">
+        <div class="container mx-auto px-4 md:px-6 py-3 md:py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2 md:gap-3">
+                <div class="w-8 h-8 md:w-10 md:h-10 bg-secondary rounded flex items-center justify-center text-white font-black text-lg md:text-xl">M</div>
+                <h1 class="text-lg md:text-xl font-black uppercase tracking-tighter">Modad <span class="text-secondary font-light">Supplies</span></h1>
+            </div>
+            <div class="hidden md:flex gap-8 font-bold text-sm">
+                <a href="#hero" class="hover:text-secondary transition">الرئيسية</a>
+                <a href="#about" class="hover:text-secondary transition">من نحن</a>
+                <a href="#projects" class="hover:text-secondary transition">أعمالنا</a>
+                <a href="#location" class="hover:text-secondary transition">موقعنا</a>
+            </div>
+            <button id="theme-toggle" class="p-2 border rounded-full hover:bg-secondary hover:text-white transition"><i id="theme-icon" class="fas fa-moon"></i></button>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero-overlay min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-4 md:px-6 text-center lg:text-right text-white">
+            <h2 data-aos="fade-up" class="text-4xl md:text-6xl lg:text-8xl font-black mb-6 leading-tight">نبني المستقبل <br> في <span class="text-secondary italic">قلب الرياض</span></h2>
+            <p data-aos="fade-up" data-aos-delay="200" class="text-lg md:text-xl opacity-80 max-w-2xl mb-10 md:mb-12 mx-auto lg:ml-0">شركة موداد للمقاولات العامة والتوريدات الإنشائية. نجمع بين الخبرة الهندسية وسرعة التنفيذ وفقاً لرؤية المملكة 2030.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <a href="tel:0550592581" class="bg-secondary text-white px-8 md:px-10 py-4 rounded-xl font-black flex items-center justify-center gap-3 hover:shadow-2xl transition">
+                    <i class="fas fa-phone"></i> 0550592581
+                </a>
+                <a href="https://wa.me/966550592581" class="bg-white/10 backdrop-blur-md border border-white/20 px-8 md:px-10 py-4 rounded-xl font-black flex items-center justify-center gap-3 hover:bg-white hover:text-primary transition">
+                    <i class="fab fa-whatsapp"></i> راسلنا واتساب
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-24 bg-white dark:bg-slate-900">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
+                <div data-aos="fade-right">
+                    <h3 class="text-secondary font-black mb-2 tracking-widest uppercase text-sm md:text-base">عن موداد للمقاولات</h3>
+                    <h2 class="text-3xl md:text-4xl font-black mb-6 md:mb-8">خبرة تمتد لأكثر من 15 عاماً في سوق الإنشاءات السعودي</h2>
+                    <p class="text-base md:text-lg text-gray-500 leading-relaxed mb-6">تأسست شركة موداد في مدينة الرياض لتكون شريكاً استراتيجياً في قطاع البناء والتشييد.</p>
+                    <div class="space-y-4 font-bold text-sm md:text-base">
+                        <div class="flex items-center gap-4"><i class="fas fa-check text-secondary"></i> الالتزام بأعلى معايير الجودة العالمية.</div>
+                        <div class="flex items-center gap-4"><i class="fas fa-check text-secondary"></i> فريق هندسي متكامل بخبرات وطنية وأجنبية.</div>
+                        <div class="flex items-center gap-4"><i class="fas fa-check text-secondary"></i> سرعة التوريد والتنفيذ في جميع أنحاء الرياض.</div>
+                    </div>
+                </div>
+                <div class="relative mt-8 lg:mt-0" data-aos="zoom-in">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800" class="rounded-[2rem] md:rounded-[3rem] shadow-2xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16 md:py-24 bg-slate-50 dark:bg-slate-950">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-black mb-4 uppercase">معرض المشاريع الاستراتيجية</h2>
+                <div class="w-16 md:w-20 h-2 bg-secondary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6" id="project-list">
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 bg-primary text-white">
+        <div class="container mx-auto px-4 md:px-6 max-w-4xl">
+            <div class="text-center mb-10 md:mb-12">
+                <h2 class="text-3xl md:text-4xl font-black mb-4">اطلب عرض سعر</h2>
+                <p class="opacity-60 italic">يسعدنا دائماً الرد على استفساراتكم</p>
+            </div>
+            <form id="contact-form" class="space-y-4 md:space-y-6">
+                <div class="grid md:grid-cols-2 gap-4 md:gap-6">
+                    <input type="text" id="name" placeholder="الاسم الكامل" class="w-full bg-white/10 p-4 rounded-xl border border-white/20 outline-none focus:bg-white focus:text-primary transition" required>
+                    <input type="tel" id="phone" placeholder="رقم الجوال" class="w-full bg-white/10 p-4 rounded-xl border border-white/20 outline-none focus:bg-white focus:text-primary transition" required>
+                </div>
+                <input type="email" id="email" placeholder="البريد الإلكتروني" class="w-full bg-white/10 p-4 rounded-xl border border-white/20 outline-none focus:bg-white focus:text-primary transition" required>
+                <textarea id="message" rows="5" placeholder="تفاصيل المشروع..." class="w-full bg-white/10 p-4 rounded-xl border border-white/20 outline-none focus:bg-white focus:text-primary transition" required></textarea>
+                <button type="submit" class="w-full bg-secondary text-white font-black py-4 md:py-5 rounded-xl text-lg hover:shadow-xl hover:bg-yellow-600 transition">إرسال الطلب</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="location" class="py-16 md:py-24 bg-white dark:bg-slate-900">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-10 md:mb-12">
+                <h2 class="text-3xl md:text-4xl font-black mb-4 uppercase">مقرنا في الرياض</h2>
+                <p class="text-gray-500">نخدم جميع أحياء مدينة الرياض ومناطق المملكة</p>
+            </div>
+            <div class="h-[350px] md:h-[500px] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl border-4 md:border-8 border-slate-100 dark:border-slate-800">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231845.8242111585!2d46.50201648719003!3d24.713551699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d874173%3A0xa6003113d022ef7c!2z2KfZhNix2YrYp9i2!5e0!3m2!1sar!2ssa!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-white py-10 md:py-12 text-center px-4">
+        <p class="font-bold opacity-50 tracking-widest uppercase text-xs md:text-sm">موداد للمقاولات والتوريدات | الرياض | 0550592581</p>
+    </footer>
+
+    <script>
+        // 1. تفعيل الأنميشن
+        AOS.init({ duration: 1000, once: true });
+
+        // 2. تبديل الوضع الليلي
+        const themeBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        themeBtn.onclick = () => {
+            document.documentElement.classList.toggle('dark');
+            themeIcon.className = document.documentElement.classList.contains('dark') ? 'fas fa-sun' : 'fas fa-moon';
+        };
+
+        // 3. عرض المشاريع
+        const projects = [
+            { title: "برج الأعمال المركزي", img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=400" },
+            { title: "مستودعات أرامكو", img: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=400" },
+            { title: "تطوير طريق الملك فهد", img: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=400" },
+            { title: "فندق بارك فيو", img: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=400" },
+            { title: "جامعة نورة (مبنى)", img: "https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=400" },
+            { title: "قصر أميري خاص", img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=400" },
+            { title: "مبنى إداري ذكي", img: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=400" }
+        ];
+
+        document.getElementById('project-list').innerHTML = projects.map(p => `
+            <div class="group relative overflow-hidden rounded-2xl md:rounded-3xl h-[300px] md:h-[350px] shadow-lg">
+                <img src="${p.img}" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
+                <h4 class="absolute bottom-6 right-6 text-white font-black text-lg">${p.title}</h4>
+            </div>
+        `).join('');
+
+        // 4. إرسال البيانات لتليجرام (الجزء الأهم)
+        const contactForm = document.getElementById('contact-form');
+
+        contactForm.onsubmit = (e) => {
+            e.preventDefault();
+
+            // بيانات البوت والآي دي الخاصة بك
+            const token = "8666871336:AAELEOYoaGsIEZwKOCosxrQfkTWDCGeJbRc";
+            const chatId = "1075926227";
+
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // تنسيق الرسالة
+            const fullText = `
+🏗️ **طلب مشروع جديد لموداد**
+━━━━━━━━━━━━━━
+👤 **العميل:** ${name}
+📞 **الجوال:** ${phone}
+📧 **الإيميل:** ${email}
+📝 **التفاصيل:** "${message}"
+━━━━━━━━━━━━━━
+📅 ${new Date().toLocaleString('ar-SA')}
+            `;
+
+            const submitBtn = contactForm.querySelector('button');
+            submitBtn.innerText = "جاري الإرسال...";
+            submitBtn.disabled = true;
+
+            const url = `https://api.telegram.org/bot${token}/sendMessage`;
+
+            fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    chat_id: chatId,
+                    text: fullText,
+                    parse_mode: "Markdown"
+                })
+            })
+            .then(res => {
+                if(res.ok) {
+                    alert("تم إرسال طلبك بنجاح! ستصلك رسالة عبر تليجرام.");
+                    contactForm.reset();
+                } else {
+                    alert("حدث خطأ، تأكد من أنك قمت بتفعيل البوت (Start).");
+                }
+            })
+            .catch(() => alert("تأكد من اتصالك بالإنترنت."))
+            .finally(() => {
+                submitBtn.innerText = "إرسال الطلب";
+                submitBtn.disabled = false;
+            });
+        };
+    </script>
+</body>
+</html>
